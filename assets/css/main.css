@@ -35,6 +35,7 @@ h3 {
     text-transform: uppercase;
     margin-top: 20px;
     margin-bottom: 10px;
+    color: #ff546c;
 }
 
 p {
@@ -42,6 +43,7 @@ p {
     font-weight: 400;
     line-height: 30px;
     font-size: 18px;
+    color: #8b8cb3;
 }
 
 /* Header */
@@ -83,11 +85,13 @@ header {
     font-family: 'Lato', sans-serif;
     font-size: 15px;
     font-weight: 700;
+    color: #ffffff;
 }
 
 #header-nav li a:hover {
     cursor: pointer;
     font-weight: 700;
+    color: #ffd200;
 }
 
 /* Portfolio Header */
@@ -95,6 +99,13 @@ header {
     display: inline-block;
     width: 100%;
     padding: 240px 0px;
+    background: #0d0c4c url(../img/photo.jpg);
+    background-size: cover;
+}
+
+#portfolio h1,
+#portfolio h2 {
+    color: #fff;
 }
 
 #portfolio-container {
@@ -106,12 +117,30 @@ header {
     display: inline-block;
     width: 100%;
     padding: 140px 0px;
+    background: #110e62;
+}
+
+#work h2 {
+    color: white;
 }
 
 #work-container {
     display: inline-block;
     width: 100%;
     margin-top: 40px;
+}
+
+#work img {
+    max-width: 100%;
+    box-shadow: 1px 5px 8px 2px #0d0c4c;
+    -webkit-box-shadow: 1px 5px 8px 2px #0d0c4c;
+}
+
+#work img:hover {
+    transition: all .2s ease-in-out;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    transform-origin: 50% 50%;
 }
 
 #work-container a {
@@ -123,6 +152,7 @@ footer {
     display: inline-block;
     width: 100%;
     padding: 80px 0px;
+    background: #0d0c4c;
 }
 
 .footer-text {
@@ -149,25 +179,40 @@ footer {
     border-top: none;
     border-bottom: 1px solid;
     font-size: 18px;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.footer-row textarea{
+::placeholder {
+    color: #fff;
+}
+
+.footer-row textarea {
     width: 92%;
     height: 100px;
 }
-.footer-row select{
+
+.footer-row select {
     border-radius: 0px;
 }
-.footer-row button{
+
+.footer-row button {
     font-size: 18px;
     font-weight: 400;
     background: none;
-    border: 2px solid;
     cursor: pointer;
     height: 50px;
     width: 22.5%;
     border-radius: 50px;
+    border: 2px solid #ffd200;
+    color: #ffffff;
 }
-.footer-row button:hover{
+
+.footer-row button:hover {
+    background: #ffd200;
     border: none;
+}
+
+#contact h2 {
+    color: #fff;
 }

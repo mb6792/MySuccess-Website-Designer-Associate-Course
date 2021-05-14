@@ -66,7 +66,9 @@
         <div class="article-content">
           <h4>The Ergodox EZ</h4>
           <p> I do a <strong>lot</strong> of typing, and because of this I find my hands very strained at the end of the day. I've recently switched to the Ergodox EZ ergonomic keyboard, and whilst its taking a while to get used to, I am finding that my hands are less stressed at the end of the day. Check out a review of the keyboard on Linus Tech Tips: </p>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/LALQsqZP1nA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LALQsqZP1nA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </div>
         <footer>Posted by Aleo on 07/05/2020</footer>
       </article>
@@ -79,7 +81,7 @@
             contributes one or more things to the field. Nevertheless, here it is,
             the list of the most influential programming languages - at least in
             my opinion! </p>
-          <table border="1">
+          <table class="blog-table">
             <thead>
               <tr>
                 <th>Language</th>
@@ -125,6 +127,10 @@
               </tr>
             </tbody>
           </table>
+          <p>What do C++, Python, Java and JavaScript have in common? They are all based on the syntax of C, along with dozens of other programming languages. This is a testament to the genius of the creator of the C programming language, the late Dennis Ritchie. </p>
+          <figure> <img src="../assets/img/blog/ritchie.jpg"  alt="Dennis Ritchie">
+            <figcaption>Dennis Ritchie, creator of the C programming language.</figcaption>
+          </figure>
         </div>
         <footer>Posted by Aleo on 04/05/2020</footer>
       </article>
@@ -144,7 +150,7 @@
         <form name="subscribe-form">
           <div class="footer-row">
             <input type="text" name="name" aria-required="true" aria-invalid="false" placeholder="First Name" required>
-            <input type="text" name="lname" aria-required="true" aria-invalid="false" placeholder="Last Name" required value="Bonnici">
+            <input type="text" name="lname" class="lastname" aria-required="true" aria-invalid="false" placeholder="Last Name" required value="Bonnici">
           </div>
           <div class="footer-row">
             <input type="email" name="email" aria-required="true" aria-invalid="false" placeholder="Email" required>

@@ -32,12 +32,14 @@ h3 {
   text-transform: uppercase;
   margin-top: 20px;
   margin-bottom: 10px;
+  color: #ff546c;
 }
 p {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   line-height: 30px;
   font-size: 18px;
+  color: #8b8cb3;
 }
 /* Header */
 #header-nav ul {
@@ -56,10 +58,12 @@ p {
   font-family: 'Lato', sans-serif;
   font-size: 15px;
   font-weight: 700;
+  color: #fffFFF;
 }
 #header-nav li a:hover {
   cursor: pointer;
   font-weight: 700;
+  color: #ffd200;
 }
 /* Header */
 header {
@@ -84,6 +88,10 @@ header {
   display: inline-block;
   width: 100%;
   padding: 240px 0px;
+  background: #0d0c4c;
+}
+#portfolio h1, #portfolio h2 {
+  color: #fff;
 }
 #portfolio-container {
   margin-top: 40px;
@@ -93,6 +101,10 @@ header {
   display: inline-block;
   width: 100%;
   padding: 140px 0px;
+  background: #110e62;
+}
+#work h2 {
+  color: white;
 }
 #work-container {
   display: inline-block;
@@ -102,12 +114,12 @@ header {
 #work-container a {
   text-decoration: none;
 }
-
 /* Footer & Form */
-footer{
+footer {
   display: inline-block;
   width: 100%;
   padding: 80px 0px;
+  background: #0d0c4c;
 }
 .footer-text {
   padding-right: 30%;
@@ -115,4 +127,47 @@ footer{
 .footer-row {
   display: inline-block;
   width: 100%;
+}
+.footer-row input, .footer-row select, .footer-row textarea {
+  display: inline-block;
+  width: 45%;
+  margin: 0px 15px 15px 0px;
+  padding-left: 10px;
+  border-radius: 0px;
+  background: none;
+  height: 40px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  font-size: 18px;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.footer-row textarea {
+  width: 92%;
+  height: 100px;
+}
+.footer-row select {
+  border-radius: 0px;
+}
+.footer-row button {
+  font-size: 18px;
+  font-weight: 400;
+  background: none;
+  cursor: pointer;
+  height: 50px;
+  width: 22.5%;
+  border-radius: 50px;
+  border: 2px solid #ffd200;
+  color: #ffffff;
+}
+.footer-row button:hover {
+  background: #ffd200;
+  border: none;
+}
+::placeholder {
+  color: #fff;
+}
+#contact h2 {
+  color: #fff;
 }

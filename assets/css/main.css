@@ -5,6 +5,7 @@ body {
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
+  margin: 0;
 }
 /* Headings & Text */
 h1 {
@@ -88,7 +89,8 @@ header {
   display: inline-block;
   width: 100%;
   padding: 240px 0px;
-  background: #0d0c4c;
+  background: #0d0c4c url("../img/photo.jpg");
+  background-size: cover;
 }
 #portfolio h1, #portfolio h2 {
   color: #fff;
@@ -114,6 +116,16 @@ header {
 #work-container a {
   text-decoration: none;
 }
+#work img {
+  max-width: 100%;
+  box-shadow: 1px 5px 8px 2px #0d0c4c;
+}
+#work img:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transform-origin: 50% 50%;
+  transition: all .2s ease-in-out;
+}
 /* Footer & Form */
 footer {
   display: inline-block;
@@ -128,7 +140,7 @@ footer {
   display: inline-block;
   width: 100%;
 }
-.footer-row input, .footer-row select, .footer-row textarea {
+.footer-row input, .footer-row textarea {
   display: inline-block;
   width: 45%;
   margin: 0px 15px 15px 0px;
@@ -170,4 +182,22 @@ footer {
 }
 #contact h2 {
   color: #fff;
+}
+#contact .flex-grid {
+  display: flex;
+}
+#contact .col {
+  flex: 1;
+}
+#contact .col-2 {
+  flex: 2;
+  margin-top: 20px !important;
+  margin-bottom: 10px !important;
+}
+#work .flex-grid {
+  display: flex;
+}
+#work .col {
+  flex: 1;
+  margin: 0 10px;
 }

@@ -1,11 +1,20 @@
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+html {
+  font-size: 100%;
+}
 body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 /* Headings & Text */
 h1 {
@@ -140,7 +149,7 @@ footer {
   display: inline-block;
   width: 100%;
 }
-.footer-row input, .footer-row textarea {
+.footer-row input, .footer-row select, .footer-row textarea {
   display: inline-block;
   width: 45%;
   margin: 0px 15px 15px 0px;
@@ -155,11 +164,16 @@ footer {
   color: #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+.footer-row select option {
+  background: #0d0c4c;
+}
 .footer-row textarea {
   width: 92%;
   height: 100px;
 }
 .footer-row select {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
   border-radius: 0px;
 }
 .footer-row button {

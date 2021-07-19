@@ -5,6 +5,8 @@
 <title>Aleo’s Blog</title>
 <link rel="stylesheet" href="../assets/css/main.css" />
 <link rel="stylesheet" href="../assets/css/blog.css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fill=no"/>
 </head>
 <body>
 <header>
@@ -54,13 +56,10 @@
               just enough tools to get a project started without overwhelming me
               with built-in stuff. Here's how easy it is to create a simple React
               page: </p>
-            <code>
-ReactDOM.render(
-    &lt;h1&lt;Hello, world!&lt;/h1&gt;,
-    document getElementById('root')
-);
-        </code>
-          </div>
+            <code> ReactDOM.render(
+            &lt;h1&lt;Hello, world!&lt;/h1&gt;,
+            document.getElementById('root')
+            ); </code> </div>
           <footer> Posted by Aleo on 11/05/2020 </footer>
         </div>
       </article>
@@ -164,7 +163,7 @@ ReactDOM.render(
             <input type="email" name="email" aria-required="true" aria-invalid="false" placeholder="Email" required>
           </div>
           <div class="footer-row">
-            <button type="submit" form="subscribe-form" value="Submit">Submit</button>
+            <button type="submit" value="Submit">Submit</button>
           </div>
         </form>
       </div>
